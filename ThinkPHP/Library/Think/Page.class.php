@@ -17,7 +17,7 @@ class Page
     public $parameter; // 分页跳转时要带的参数
     public $totalRows; // 总行数
     public $totalPages; // 分页总页面数
-    public $rollPage = 11; // 分页栏每页显示的页数
+    public $rollPage = 8; // 分页栏每页显示的页数
 
     private $p       = 'p'; //分页参数名
     private $url     = ''; //当前链接URL
@@ -39,7 +39,7 @@ class Page
      * @param array $listRows  每页显示记录数
      * @param array $parameter  分页跳转的参数
      */
-    public function __construct($totalRows, $listRows = 20, $parameter = array())
+    public function __construct($totalRows, $listRows = 6, $parameter = array())
     {
         C('VAR_PAGE') && $this->p = C('VAR_PAGE'); //设置分页参数名称
         /* 基础设置 */

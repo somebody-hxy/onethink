@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,8 @@
     <title>注册</title>
 
     <!-- Bootstrap -->
-    <link href="__PUBLIC__/Home/css/bootstrap.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/Home/css/style.css" rel="stylesheet">
+    <link href="/wwwroot/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/wwwroot/Public/Home/css/style.css" rel="stylesheet">
 
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -24,23 +24,23 @@
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid text-center">
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="{:U('Index/index')}" class="navbar-link">首页</a></p>
+                <p class="navbar-text"><a href="<?php echo U('Index/index');?>" class="navbar-link">首页</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="{:U('Server/index')}" class="navbar-link">服务</a></p>
+                <p class="navbar-text"><a href="<?php echo U('Server/index');?>" class="navbar-link">服务</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="{:U('Find/index')}" class="navbar-link">发现</a></p>
+                <p class="navbar-text"><a href="<?php echo U('Find/index');?>" class="navbar-link">发现</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="{:U('User/index')}" class="navbar-link">我的</a></p>
+                <p class="navbar-text"><a href="<?php echo U('User/index');?>" class="navbar-link">我的</a></p>
             </div>
         </div>
     </nav>
     <!--导航结束-->
     <div class="container">
         <div class="container-fluid">
-            <form class="login-form" action="{:U('User/register')}" method="post">
+            <form class="login-form" action="<?php echo U('User/register');?>" method="post">
                 <h2 class="form-signin-heading">用户注册</h2>
                 <p>
                     <label for="inputUsername" class="sr-only">用户名</label>
@@ -64,13 +64,13 @@
                 </p>
                 <div class="controls" style="margin-bottom: 20px;">
                     <!--<img class="verifyimg reloadverify" alt="点击切换" onclick="this.src='/wchat.php?s=/User/verify.html'" src="/Wchat/verify.html" style="cursor:pointer;height: 40px;">-->
-                    <img class="verifyimg reloadverify" alt="点击切换" src="{:U('verify')}" style="cursor:pointer;">
+                    <img class="verifyimg reloadverify" alt="点击切换" src="<?php echo U('verify');?>" style="cursor:pointer;">
                 </div>
                 <p>
                     <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
                 </p>
             </form>
-            <p class="text-right"><a href="{:U('User/login')}">已有账号，直接登录</a></p>
+            <p class="text-right"><a href="<?php echo U('User/login');?>">已有账号，直接登录</a></p>
         </div>
 
 
@@ -80,9 +80,9 @@
 
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="__PUBLIC__/Home/js/jquery-1.11.2.min.js"></script>
+<script src="/wwwroot/Public/Home/js/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="__PUBLIC__/Home/js/bootstrap.min.js"></script>
+<script src="/wwwroot/Public/Home/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(document)
             .ajaxStart(function(){

@@ -8,7 +8,7 @@
  */
 
 namespace Admin\Controller;
-
+use \Tools\Page;
 
 class CenterController extends AdminController{
     /**
@@ -18,8 +18,18 @@ class CenterController extends AdminController{
         /* 获取频道列表 */
         $map  = array('status' => array('gt', -1));
         //M函数：用于实例化一个没有模型文件的Model
-        $list = M('Center')->where($map)->order('id asc')->select();
+//        $list = M('Center')->where($map)->order('id asc')->select();
+        $info = M('Center');
+        import('ORG.Util.Page');// 导入分页类
+        $total = $info->where($map)->count();//获取总条数
+        //实例化分页类
+        $page=new \Think\Page($total);//框架自带分页工具
+        $show = $page->show();
+       // $listRows = 2;//每页显示几条
+        $list = $info->where($map)->order('id asc')->limit($page->firstRow.','.$page->listRows)->select();
 
+        //分配
+        $this->assign('page',$show);
         $this->assign('list', $list);
         $this->meta_title = '小区租售';
         $this->display();

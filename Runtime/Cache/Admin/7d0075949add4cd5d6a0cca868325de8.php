@@ -142,15 +142,15 @@
                 <input type="text" class="text time" id="time-start" name="stop_time" value="">
             </div>
         </div>
-        <!--<div class="form-item">-->
-            <!--<label class="item-label">状态</label>-->
-            <!--<div class="controls">-->
-                <!--<select name="status">-->
-                    <!--<option value="1" <?php if(($info["status"]) == "0"): ?>selected<?php endif; ?>>启用</option>-->
-                    <!--<option value="0" <?php if(($info["status"]) == "1"): ?>selected<?php endif; ?>>禁用</option>-->
-                <!--</select>-->
-            <!--</div>-->
-        <!--</div>-->
+   <!--     <div class="form-item">
+            <label class="item-label">状态</label>
+            <div class="controls">
+                <select name="status">
+                    <option value="1" <?php if(($info["status"]) == "0"): ?>selected<?php endif; ?>>启用</option>
+                    <option value="0" <?php if(($info["status"]) == "1"): ?>selected<?php endif; ?>>禁用</option>
+                </select>
+            </div>
+        </div> -->
 		<div class="form-item">
 			<input type="hidden" name="id" value="<?php echo ((isset($info["id"]) && ($info["id"] !== ""))?($info["id"]):''); ?>">
 			<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
