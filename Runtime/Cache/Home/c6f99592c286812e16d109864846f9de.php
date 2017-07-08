@@ -45,7 +45,7 @@
 
     <div class="container-fluid">
         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><div class="row noticeList">
-                <a href="<?php echo U('Index/notice_intro?id='.$list['id']);?>">
+                <a href="<?php echo U('Index/server_intro?id='.$list['id']);?>">
                     <div class="col-xs-2">
                         <img class="noticeImg" src="/wwwroot/Public/Home/images/wechat/1.png" />
                     </div>

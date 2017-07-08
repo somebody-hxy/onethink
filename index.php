@@ -32,6 +32,9 @@ if(!is_file(APP_PATH . 'User/Conf/config.php')){
  */
 define ( 'RUNTIME_PATH', './Runtime/' );
 
+
+define('HTML_PATH', './HTML/');//生成静态页面的文件位置
+
 /**
  * 引入核心入口
  * ThinkPHP亦可移动到WEB以外的目录

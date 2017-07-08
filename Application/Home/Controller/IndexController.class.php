@@ -50,7 +50,16 @@ class IndexController extends HomeController {
 
     //小区通知
     public function notice(){
-        $map  = array('status' => array('gt', -1));
+        $map1['title']='小区通知' ;
+        $map1['status']='1' ;
+        $cate = M('Category')->where($map1)->select();
+//        dump($cate);exit;//分类
+        foreach($cate as $v){
+
+        }
+//        dump($v);exit;
+        $id=$v['id'];
+        $map  = array('status' => array('gt', -1),'category_id'=>$id);
         $list = M('Document')->where($map)->order('id asc')->select();
         $this->assign('list', $list);
         $this->display('notice');
@@ -67,14 +76,24 @@ class IndexController extends HomeController {
         $this->assign('list3', $list3);
         $this->display('notice-detail');
     }
-    //小区通知
+    //便民服务通知
     public function server(){
-        $map  = array('status' => array('gt', -1));
+        $map1['title']='便民服务' ;
+        $map1['status']='1' ;
+        $cate = M('Category')->where($map1)->select();
+//        dump($cate);exit;//分类
+        foreach($cate as $v){
+
+        }
+//        dump($v);exit;
+        $id=$v['id'];
+        $map  = array('status' => array('gt', -1),'category_id'=>$id);
         $list = M('Document')->where($map)->order('id asc')->select();
+        //dump($list);exit;
         $this->assign('list', $list);
         $this->display('server');
     }
-    //小区通知详情
+    //便民服务详情
     public function server_intro($id=0){
         $list = M('Document')->find($id);
 //        dump($list['uid']);exit;//用户ID
@@ -86,5 +105,8 @@ class IndexController extends HomeController {
         $this->assign('list3', $list3);
         $this->display('server-detail');
     }
-
+    //在线报修
+    public function repair(){
+        $this->display('repair');
+    }
 }
