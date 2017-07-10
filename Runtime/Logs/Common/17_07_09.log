@@ -1,0 +1,7 @@
+[ 2017-07-09T11:16:55+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002497s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003027s ]
+ERR: 无法加载模块:Index
+

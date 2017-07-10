@@ -63,7 +63,7 @@
                         </a>
                     </div>
                     <div class="col-xs-4">
-                        <a href="online.html">
+                        <a href="<?php echo U('repair');?>l">
                             <div class="indexLabel label-info">
                                 <span class="glyphicon glyphicon-heart-empty"></span><br/>
                                 在线报修
@@ -71,7 +71,7 @@
                         </a>
                     </div>
                     <div class="col-xs-4">
-                        <a href="notice.html">
+                        <a href="<?php echo U('shop');?>">
                             <div class="indexLabel label-success">
                                 <span class="glyphicon glyphicon-briefcase"></span><br/>
                                 商家活动
@@ -88,7 +88,7 @@
                         </a>
                     </div>
                     <div class="col-xs-4">
-                        <a href="notice.html">
+                        <a href="<?php echo U('activity');?>">
                             <div class="indexLabel label-default">
                                 <span class="glyphicon glyphicon-apple"></span><br/>
                                 小区活动

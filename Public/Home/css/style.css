@@ -2,11 +2,11 @@
 .indexLabel{padding: 10px 0; margin: 10px 0 0; color: #fff;}
 
 @font-face {font-family: "iconfont";
-    src: url('__PUBLIC__/Home/font/iconfont.eot?t=1463627708'); /* IE9*/
-    src: url('__PUBLIC__/Home/font/iconfont.eot?t=1463627708#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('__PUBLIC__/Home/font/iconfont.woff?t=1463627708') format('woff'), /* chrome, firefox */
-    url('__PUBLIC__/Home/font/iconfont.ttf?t=1463627708') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-    url('__PUBLIC__/Home/font/iconfont.svg?t=1463627708#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('../font/iconfont.eot?t=1463627708'); /* IE9*/
+    src: url('../font/iconfont.eot?t=1463627708#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff?t=1463627708') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf?t=1463627708') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg?t=1463627708#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {

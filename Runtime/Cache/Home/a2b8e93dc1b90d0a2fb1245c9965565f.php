@@ -52,7 +52,7 @@
                     <div class="col-xs-10">
                         <p class="title"><?php echo ($list["title"]); ?></p>
                         <p class="intro"><?php echo ($list["description"]); ?></p>
-                        <p class="info">浏览: 199 <span class="pull-right"><?php echo (date("Y-m-d",$list["create_time"])); ?></span> </p>
+                        <p class="info"><?php echo ($list["view"]); ?><span class="pull-right"><?php echo (date("Y-m-d",$list["create_time"])); ?></span> </p>
                     </div>
                 </a>
             </div><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -1,0 +1,55 @@
+[ 2017-07-08T08:50:55+08:00 ] 127.0.0.1 /Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002502s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003103s ]
+ERR: 无法加载模块:Index
+
+[ 2017-07-08T08:50:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001549s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001955s ]
+
+[ 2017-07-08T08:52:02+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002554s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-08T08:52:02+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004852s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005937s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-08T08:52:02+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004783s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-08T08:52:08+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.woff2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002807s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-08T08:52:08+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001592s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002040s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-08T08:52:08+08:00 ] 127.0.0.1 /Public/Home/css/__PUBLIC__/Home/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002758s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003255s ]
+ERR: 无法加载模块:Public
+

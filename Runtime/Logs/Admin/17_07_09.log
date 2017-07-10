@@ -1,0 +1,214 @@
+[ 2017-07-09T10:47:54+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-07-09T10:47:54+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001835s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2017-07-09T10:48:13+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-07-09T10:48:13+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/verify.html&random=0.8097428782842366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-07-09T10:48:31+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001970s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0677s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0167s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1499568511','hxy在2017-07-09 10:48登录了后台') [ RunTime:0.0161s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 1 D:\www\onethink\wwwroot\Application\Common\Common\function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\www\onethink\wwwroot\Application\Common\Common\function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1499482111 LIMIT 1   [ RunTime:0.1227s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0127s ]
+SQL: UPDATE `onethink_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0017s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1499568511',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0007s ]
+
+[ 2017-07-09T10:48:32+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0228s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0013s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.0118s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.095538s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.093772s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.256110s ]
+SQL: select version() as v; [ RunTime:0.0424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052734s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.152775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.205205s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.205307s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.329137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007828s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.227272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.234754s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.029505s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.328731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008331s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.227272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.235216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2017-07-09T11:14:00+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Center/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0063s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Center/index%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `onethink_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0167s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE `group` = '管理中心' AND `pid` = 124 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_center` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_center` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0501s ]
+SQL: SELECT * FROM `onethink_center` WHERE `status` > -1 ORDER BY `id` asc LIMIT 0,6   [ RunTime:0.0113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: pid D:\www\onethink\wwwroot\Runtime\Cache\Admin\d39e51d7c14c2b28a9a0e8a9fb7b6dba.php 第 93 行.
+NOTIC: [8] Undefined variable: pid D:\www\onethink\wwwroot\Runtime\Cache\Admin\d39e51d7c14c2b28a9a0e8a9fb7b6dba.php 第 130 行.
+NOTIC: [8] Undefined variable: pid D:\www\onethink\wwwroot\Runtime\Cache\Admin\d39e51d7c14c2b28a9a0e8a9fb7b6dba.php 第 130 行.
+NOTIC: [8] Undefined variable: pid D:\www\onethink\wwwroot\Runtime\Cache\Admin\d39e51d7c14c2b28a9a0e8a9fb7b6dba.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2017-07-09T11:14:02+08:00 ] 127.0.0.1 /wwwroot/admin.php?s=/Activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Activity/index%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `onethink_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE `group` = '管理中心' AND `pid` = 124 AND `hide` = 0 ORDER BY `sort` asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_activity` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_activity` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_activity` WHERE `status` > -1 ORDER BY `id` asc LIMIT 0,6   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: pid D:\www\onethink\wwwroot\Runtime\Cache\Admin\c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+

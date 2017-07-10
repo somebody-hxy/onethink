@@ -1,0 +1,20 @@
+[ 2017-07-08T09:36:35+08:00 ] 127.0.0.1 /wwwroot/index.php?s=/Wechat/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008719s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005480s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-07-08T09:37:07+08:00 ] 127.0.0.1 /wwwroot/wechat.php?s=/Wechat/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+ERR: 无法加载控制器:Index
+
